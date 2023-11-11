@@ -6,7 +6,16 @@
   font-family: 'Playfair Display', serif;
 }
 
+li {
+  padding: 0 1.25rem;
+}
+
+.container {
+  padding: 0 1rem;
+}
+
 
 .header-white-logo {
-  width: 60px;
+  width: 100px;
+  object-fit: contain;
 }
