@@ -29,7 +29,7 @@ export default function Header() {
 
 return (
   <>
-  <header className='bg-black text-white py-5'>
+  <header className='bg-black text-white py-6'>
     <div className='bg-black container flex justify-between mx-auto'>
       {/* <h4 className='ml-5'>Anytime Promotion</h4> */}
       <h4 className={`ml-5 text-xl ${isMobile ? 'hidden' : '' }`}>Anytime Promotion</h4>
