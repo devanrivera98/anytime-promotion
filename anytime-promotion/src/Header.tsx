@@ -1,14 +1,22 @@
 import {Outlet} from 'react-router-dom'
 import { useState, useEffect } from 'react'
 import Timer from './Timer';
+import { FontAwesomeIcon } from '@fortawesome/react-fontawesome'
+import { faBars } from '@fortawesome/free-solid-svg-icons';
+import {faXmark} from '@fortawesome/free-solid-svg-icons';
 
 export default function Header() {
   // const [isOpen, setIsOpen] = useState(false)
   const [isMobile, setIsMobile] = useState(window.innerWidth < 768)
   const [windowWidth, setWindowWidth] = useState(window.innerWidth);
+  const [isOpen, setIsOpen] = useState(false)
 
   function handleResize() {
     setWindowWidth(window.innerWidth)
+  }
+
+  const handleIconClick = () => {
+    setIsOpen(!isOpen)
   }
 
   useEffect(() => {
@@ -29,12 +37,15 @@ export default function Header() {
 
 return (
   <>
-  <header className='bg-black text-white py-6'>
+  <header className='header bg-black text-white py-6'>
     <div className='bg-black container flex justify-between mx-auto'>
-      {/* <h4 className='ml-5'>Anytime Promotion</h4> */}
       <h4 className={`ml-5 text-xl ${isMobile ? 'hidden' : '' }`}>Anytime Promotion</h4>
-        <img className={`header-white-logo ${isMobile ? '' : 'hidden'}`} src='anytime-white-logo.png' />
-      <nav>
+      <img className={`header-white-logo ${isMobile ? '' : 'hidden'}`} src='anytime-white-logo.png' />
+      <div className={`nav-toggle ${isMobile ? '' : 'hidden'}`} onClick={handleIconClick}>
+        <FontAwesomeIcon className={`${isOpen && isMobile ? 'hidden' : ''}`} icon={faBars} style={{ color: '#ffffff' }}  size='2x'/>
+        <FontAwesomeIcon className={`${isOpen && isMobile ? '' : 'hidden'}`} icon={faXmark} style={{color: "#ffffff",}} />
+      </div>
+      <nav className={`navigation ${isMobile ? 'open' : ''}`}>
         <ul>
           <li className='inline-block'>
             <a className='hover:underline hover:cursor-pointer underline-offset-4'>Home</a>

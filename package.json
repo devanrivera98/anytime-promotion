@@ -3,6 +3,9 @@
     "markuplint": "^3.14.0"
   },
   "dependencies": {
-    "markup": "^0.0.4"
+    "@fortawesome/fontawesome-svg-core": "^6.4.2",
+    "@types/react-fontawesome": "^1.6.8",
+    "markup": "^0.0.4",
+    "react-icons": "^4.11.0"
   }
 }

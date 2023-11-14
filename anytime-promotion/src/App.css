@@ -18,6 +18,19 @@ li {
   display: hidden;
 }
 
+.header {
+  z-index: 1
+}
+
+.nav-toggle {
+  position: absolute;
+  top: 2.5rem;
+  right: 1rem;
+}
+
+.open {
+  height: 100vh;
+}
 
 .header-white-logo {
   width: 100px;
