@@ -53,6 +53,10 @@ li {
   z-index: 3;
 }
 
+.icon-arrow {
+  font-size: 3rem;
+}
+
 @media all and (max-width: 767px) {
   .container {
     flex-direction: column;

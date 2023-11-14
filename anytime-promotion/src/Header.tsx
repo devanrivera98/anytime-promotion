@@ -1,6 +1,6 @@
 import {Outlet} from 'react-router-dom'
 import { useState } from 'react'
-import Timer from './Timer';
+import Banner from './Banner';
 
 export default function Header() {
   // const [isMobile, setIsMobile] = useState(window.innerWidth < 768)
@@ -67,7 +67,7 @@ return (
       </div>
     </nav>
   </header>
-  <Timer/>
+  <Banner/>
   <Outlet/>
   </>
 )
