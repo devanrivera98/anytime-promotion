@@ -12,8 +12,11 @@ export default function Events() {
           <div className="flex justify-center text-2xl pt-5">
             <h1>Past Event!</h1>
           </div>
-          <EventsCard/>
-          <EventsCard/>
+          <div className="flex justify-center flex-wrap">
+            <EventsCard/>
+            <EventsCard/>
+            <EventsCard/>
+          </div>
         </div>
       </div>
     </>

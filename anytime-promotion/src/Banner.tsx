@@ -13,7 +13,7 @@ export default function Banner() {
           <p >November 13th, 2023 at Whittier Convention Center</p>
         </div>
         <div className="flex justify-center text-white">
-          <p className="underline font-extrabold hover:cursor-pointer">Learn More</p>
+          <a href="/events" className="underline font-extrabold hover:cursor-pointer">Learn More</a>
         </div>
       </div>
     </header>
