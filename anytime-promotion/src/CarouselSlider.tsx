@@ -2,9 +2,9 @@ import { useState } from 'react';
 import { FontAwesomeIcon } from '@fortawesome/react-fontawesome';
 import { faAngleLeft, faAngleRight, faCircle as solidCircle } from '@fortawesome/free-solid-svg-icons';
 import { faCircle as regularCircle } from '@fortawesome/free-regular-svg-icons';
-import { sliderPhotos } from './Carousel';
+import { sliderPhotos } from './CarouselObject';
 
-const Slider = () => {
+export default function Slider() {
   const [isCurrent, setIsCurrent] = useState(0);
 
   const handleCustomClickShow = (index: number) => {
@@ -23,7 +23,7 @@ const Slider = () => {
       </div>
     </div>
   );
-};
+}
 
 interface ButtonsProps {
   count: number;
@@ -46,12 +46,10 @@ interface EachButtonProps {
   onCustomClick: () => void;
 }
 
-export const EachButton = ({ isActive, onCustomClick }: EachButtonProps) => {
+ const EachButton = ({ isActive, onCustomClick }: EachButtonProps) => {
   return (
     <div>
       <FontAwesomeIcon onClick={onCustomClick} size='lg' icon={isActive ? solidCircle : regularCircle} style={{ color: '#000000' }} />
     </div>
   );
 };
-
-export default Slider;
