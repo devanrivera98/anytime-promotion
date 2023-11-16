@@ -6,6 +6,11 @@
   font-family: 'Playfair Display', serif;
 }
 
+.banner {
+  width: 65rem;
+  object-fit:fill
+}
+
 /* body {
   overflow: hidden;
 } */
