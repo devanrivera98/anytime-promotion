@@ -16,7 +16,7 @@ return (
     <nav className='bg-black text-white text-lg py-4'>
       <div className='flex flex-wrap items-center justify-between mx-auto p-4'>
         <a href='/' className='pl-3 hover:cursor-pointer'>
-          <div className='md:block hidden'>Anytime Promotion</div>
+          <div className='md:block hover:animate-pulse hidden'>Anytime Promotion</div>
           <img className='w-12 h-15 md:hidden' src='/anytime-white-logo.jpg'></img>
         </a>
         <button onClick={handleIconClick} data-collapse-toggle="navbar-default" type="button" className="inline-flex items-center p-2 w-10 h-10 justify-center text-sm text-gray-500 rounded-lg md:hidden hover:bg-gray-100 focus:outline-none hover:ring-2 hover:ring-gray-200 dark:text-gray-400 dark:hover:bg-gray-700 dark:hover:ring-gray-600" aria-controls="navbar-default" aria-expanded="false">

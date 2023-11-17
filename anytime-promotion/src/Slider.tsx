@@ -1,4 +1,4 @@
-import { useState } from 'react';
+import { useEffect, useState } from 'react';
 import { FontAwesomeIcon } from '@fortawesome/react-fontawesome';
 import { faAngleLeft, faAngleRight, faCircle as solidCircle } from '@fortawesome/free-solid-svg-icons';
 import { faCircle as regularCircle } from '@fortawesome/free-regular-svg-icons';
@@ -10,6 +10,20 @@ export default function Slider() {
   const handleCustomClickShow = (index: number) => {
     setIsCurrent(index);
   };
+
+
+  useEffect(() => {
+      function timerCallback() {
+    setIsCurrent((isCurrent + 1 + sliderPhotos.length) % sliderPhotos.length)
+  }
+  const intervalID = setInterval(timerCallback, 3000)
+
+  //cleaning the interval
+  return () => clearInterval(intervalID)
+
+
+  }, [isCurrent])
+
 
   return (
     <div className="pt-5">
