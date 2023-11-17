@@ -2,7 +2,7 @@ export default function Banner() {
 
   return (
     <>
-    <header className='bg-darkRed py-1'>
+    <header className='bg-darkRed py-1 hidden'>
       <div>
         <div className="text-white text-xl flex justify-center my-auto">
           <div className="text-yellow-500">

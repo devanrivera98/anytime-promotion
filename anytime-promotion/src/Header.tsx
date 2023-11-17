@@ -13,7 +13,7 @@ export default function Header() {
 return (
   <>
   <header>
-    <nav className='bg-black text-white py-4'>
+    <nav className='bg-black text-white text-lg py-4'>
       <div className='flex flex-wrap items-center justify-between mx-auto p-4'>
         <a href='/' className='pl-3 hover:cursor-pointer'>
           <div className='md:block hidden'>Anytime Promotion</div>

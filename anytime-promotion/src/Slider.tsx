@@ -12,7 +12,7 @@ export default function Slider() {
   };
 
   return (
-    <div className="pt-5 bg-offWhite ">
+    <div className="pt-5">
       <div className="flex justify-center">
         <LeftArrow onCustomClick={() => setIsCurrent((isCurrent - 1 + sliderPhotos.length) % sliderPhotos.length)}/>
         <img className="h-64 rounded rounded-xl banner" src={sliderPhotos[isCurrent].url} alt={sliderPhotos[isCurrent].name} />
