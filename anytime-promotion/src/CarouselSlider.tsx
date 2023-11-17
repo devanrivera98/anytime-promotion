@@ -14,9 +14,9 @@ export default function Slider() {
   return (
     <div className="pt-5 bg-offWhite homepage">
       <div className="flex justify-center">
-        <FontAwesomeIcon className='md:block hidden my-auto icon-arrow' icon={faAngleLeft} size="2xl" style={{ color: "#444040" }} />
+        <LeftArrow onCustomClick={() => setIsCurrent((isCurrent - 1 + sliderPhotos.length) % sliderPhotos.length)}/>
         <img className="h-64 rounded rounded-xl banner" src={sliderPhotos[isCurrent].url} alt={sliderPhotos[isCurrent].name} />
-        <FontAwesomeIcon className='md:block hidden my-auto icon-arrow' icon={faAngleRight} size="2xl" style={{ color: "#444040" }} />
+        <RightArrow onCustomClick={() => setIsCurrent((isCurrent + 1 + sliderPhotos.length) % sliderPhotos.length)} />
       </div>
       <div className='flex justify-center pt-2 space-x-8'>
         {Buttons({ count: sliderPhotos.length, current: isCurrent, onCustomClickShow: handleCustomClickShow })}
@@ -31,7 +31,7 @@ interface ButtonsProps {
   onCustomClickShow: (index: number) => void;
 }
 
-const Buttons = ({ count, current, onCustomClickShow } : ButtonsProps) => {
+function Buttons({ count, current, onCustomClickShow } : ButtonsProps) {
   const buttons: JSX.Element[] = [];
   for (let i = 0; i < count; i++) {
     buttons.push(
@@ -39,17 +39,33 @@ const Buttons = ({ count, current, onCustomClickShow } : ButtonsProps) => {
     );
   }
   return <>{buttons}</>;
-};
+}
 
 interface EachButtonProps {
   isActive: boolean;
   onCustomClick: () => void;
 }
 
- const EachButton = ({ isActive, onCustomClick }: EachButtonProps) => {
+ function EachButton({ isActive, onCustomClick }: EachButtonProps)  {
   return (
     <div>
       <FontAwesomeIcon onClick={onCustomClick} size='lg' icon={isActive ? solidCircle : regularCircle} style={{ color: '#000000' }} />
     </div>
   );
-};
+}
+
+interface ArrowProp {
+  onCustomClick: () => void
+}
+
+function LeftArrow({onCustomClick}: ArrowProp) {
+  return (
+  <FontAwesomeIcon className='md:block hidden my-auto icon-arrow' onClick={onCustomClick} icon={faAngleLeft} size="2xl" style={{ color: "#444040" }} />
+  )
+}
+
+function RightArrow({onCustomClick}: ArrowProp) {
+  return (
+  <FontAwesomeIcon className='md:block hidden my-auto icon-arrow' onClick={onCustomClick} icon={faAngleRight} size="2xl" style={{ color: "#444040" }} />
+  )
+}
