@@ -12,7 +12,7 @@ export default function Slider() {
   };
 
   return (
-    <div className="pt-5 bg-offWhite homepage">
+    <div className="pt-5 bg-offWhite ">
       <div className="flex justify-center">
         <LeftArrow onCustomClick={() => setIsCurrent((isCurrent - 1 + sliderPhotos.length) % sliderPhotos.length)}/>
         <img className="h-64 rounded rounded-xl banner" src={sliderPhotos[isCurrent].url} alt={sliderPhotos[isCurrent].name} />
@@ -60,12 +60,12 @@ interface ArrowProp {
 
 function LeftArrow({onCustomClick}: ArrowProp) {
   return (
-  <FontAwesomeIcon className='md:block hidden my-auto icon-arrow' onClick={onCustomClick} icon={faAngleLeft} size="2xl" style={{ color: "#444040" }} />
+  <FontAwesomeIcon className=' hover:translate-x-0.5 md:block hidden my-auto icon-arrow' onClick={onCustomClick} icon={faAngleLeft} size="2xl" style={{ color: "#444040" }} />
   )
 }
 
 function RightArrow({onCustomClick}: ArrowProp) {
   return (
-  <FontAwesomeIcon className='md:block hidden my-auto icon-arrow' onClick={onCustomClick} icon={faAngleRight} size="2xl" style={{ color: "#444040" }} />
+  <FontAwesomeIcon className='hover:translate-x-0.5 md:block hidden my-auto icon-arrow' onClick={onCustomClick} icon={faAngleRight} size="2xl" style={{ color: "#444040" }} />
   )
 }
