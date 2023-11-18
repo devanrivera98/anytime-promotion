@@ -6,17 +6,18 @@
   font-family: 'Playfair Display', serif;
 }
 
-body {
-  overflow: hidden;
+.banner {
+  width: 65rem;
+  object-fit:fill
 }
+
+/* body {
+  overflow: hidden;
+} */
 
 li {
   padding: 0 1.25rem;
 }
-
-/* .container {
-  padding: 0 1rem;
-} */
 
 .hidden {
   display: none;
@@ -51,6 +52,14 @@ li {
   right: 0;
   top: 0;
   z-index: 3;
+}
+
+.homepage {
+  height: 100vh;
+}
+
+.icon-arrow {
+  font-size: 3rem;
 }
 
 @media all and (max-width: 767px) {

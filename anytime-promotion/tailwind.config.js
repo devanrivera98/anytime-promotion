@@ -15,8 +15,10 @@ export default {
       },
       colors: {
         lightGray: '#F5F5F5',
-        darkRed: '#610000'
-      }
+        darkRed: '#610000',
+        offWhite: '#F5F5F5',
+        darkBlue: '#243551'
+      },
     },
   },
   plugins: [],
