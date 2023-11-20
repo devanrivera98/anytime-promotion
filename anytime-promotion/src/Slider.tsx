@@ -1,4 +1,4 @@
-import { useEffect, useState } from 'react';
+import React, { useEffect, useState } from 'react';
 import { FontAwesomeIcon } from '@fortawesome/react-fontawesome';
 import { faAngleLeft, faAngleRight, faCircle as solidCircle } from '@fortawesome/free-solid-svg-icons';
 import { faCircle as regularCircle } from '@fortawesome/free-regular-svg-icons';
@@ -27,9 +27,11 @@ export default function Slider() {
 
   return (
     <div className="pt-5">
-      <div className="flex justify-center">
+      <div className="flex justify-center items-center">
         <LeftArrow onCustomClick={() => setIsCurrent((isCurrent - 1 + sliderPhotos.length) % sliderPhotos.length)}/>
-        <img className="h-64 rounded rounded-xl banner" src={sliderPhotos[isCurrent].url} alt={sliderPhotos[isCurrent].name} />
+        <div>
+          <img className="h-64 rounded rounded-xl banner" src={sliderPhotos[isCurrent].url} alt={sliderPhotos[isCurrent].name} />
+        </div>
         <RightArrow onCustomClick={() => setIsCurrent((isCurrent + 1 + sliderPhotos.length) % sliderPhotos.length)} />
       </div>
       <div className='flex justify-center pt-2 space-x-8'>
@@ -74,12 +76,12 @@ interface ArrowProp {
 
 function LeftArrow({onCustomClick}: ArrowProp) {
   return (
-  <FontAwesomeIcon className=' hover:translate-x-0.5 md:block hidden my-auto icon-arrow' onClick={onCustomClick} icon={faAngleLeft} size="2xl" style={{ color: "#444040" }} />
+  <FontAwesomeIcon className='hover:translate-x-0.5 md:inline-block hidden px-5 icon-arrow' onClick={onCustomClick} icon={faAngleLeft} size="2xl" style={{ color: "#444040" }} />
   )
 }
 
 function RightArrow({onCustomClick}: ArrowProp) {
   return (
-  <FontAwesomeIcon className='hover:translate-x-0.5 md:block hidden my-auto icon-arrow' onClick={onCustomClick} icon={faAngleRight} size="2xl" style={{ color: "#444040" }} />
+  <FontAwesomeIcon className='hover:translate-x-0.5 md:inline-block hidden px-5 icon-arrow' onClick={onCustomClick} icon={faAngleRight} size="2xl" style={{ color: "#444040" }} />
   )
 }
