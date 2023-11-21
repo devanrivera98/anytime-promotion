@@ -3,7 +3,7 @@ export default function Validator() {
     <>
     <div>
       <div className="flex justify-center pt-5">
-        <h1 className="text-2xl">Authograph Verification Check</h1>
+        <h1 className="text-2xl bg-darkBlue rounded p-1 text-white">Authograph Verification Check</h1>
       </div>
     </div>
     </>
