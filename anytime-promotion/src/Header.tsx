@@ -7,7 +7,6 @@ export default function Header() {
 
   const handleIconClick = () => {
     setIsOpen(!isOpen)
-    console.log('is clicked')
   }
 
 return (
@@ -35,7 +34,7 @@ return (
               <a href='/events' className='block py-2 px-3 text-white rounded md:hover:bg-transparent hover:bg-gray-800 md:p-0 md:bg-black md:hover:underline underline-offset-4'>Events</a>
             </li>
             <li>
-              <a href='#' className='block py-2 px-3 text-white rounded md:hover:bg-transparent hover:bg-gray-800 md:p-0 md:bg-black md:hover:underline underline-offset-4'>Autograph Validator</a>
+              <a href='/validator' className='block py-2 px-3 text-white rounded md:hover:bg-transparent hover:bg-gray-800 md:p-0 md:bg-black md:hover:underline underline-offset-4'>Autograph Validator</a>
             </li>
             <li>
               <a href='#' className='block py-2 px-3 text-white rounded md:hover:bg-transparent hover:bg-gray-800 md:p-0 md:bg-black md:hover:underline underline-offset-4'>Contact Us</a>
