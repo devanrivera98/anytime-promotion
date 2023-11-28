@@ -71,4 +71,66 @@ li {
   li {
     display: block;
   }
+
+  a#menu-icon {
+    display: inline-block;
+    padding: 10px;
+  }
+
+  a#menu-icon .bar {
+    margin: 3px;
+    width: 25px;
+    height: 3px;
+    background: white;
+    border-radius: 1.5px;
+    transition: margin 0.2s, transform 0.2s;
+
+    /* same as above but with prefixes added */
+    -webkit-transition: margin 0.2s, -webkit-transform 0.2s;
+    transition: margin 0.2s, -webkit-transform 0.2s;
+    -o-transition: margin 0.2s, transform 0.2s;
+    transition: margin 0.2s, transform 0.2s;
+    transition: margin 0.2s, transform 0.2s, -webkit-transform 0.2s;
+  }
+
+  a#menu-icon:not(.close):hover {
+    padding: 6px 10px;
+  }
+
+  a#menu-icon:not(.close):hover .bar {
+    margin: 4px 3px;
+  }
+
+    a#menu-icon.close .bar:first-child {
+      -webkit-transform: translateY(6px) rotate(45deg);
+      -ms-transform: translateY(6px) rotate(45deg);
+      transform: translateY(6px) rotate(45deg);
+    }
+
+    a#menu-icon.close .bar:nth-child(2) {
+      opacity: 0;
+    }
+
+    a#menu-icon.close .bar:last-child {
+      -webkit-transform: translateY(-6px) rotate(-45deg);
+      -ms-transform: translateY(-6px) rotate(-45deg);
+      transform: translateY(-6px) rotate(-45deg);
+    }
 }
+
+
+/* @media all and (max-width: 640px) {
+a#menu-icon {
+    display: inline-block;
+    color: white
+  }
+
+  .bar {
+    color: white;
+  }
+
+  a#menu-icon .bar {
+    margin: 3px;
+    width:;
+  }
+} */
