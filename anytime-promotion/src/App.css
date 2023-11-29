@@ -12,9 +12,16 @@
   user-select: none;
 }
 
-/* body {
-  overflow: hidden;
+/* .mobile-open {
+  position: 'fixed';
+  z-index:9999;
+  width: 100%;
+  height: 100%;
 } */
+
+header {
+  overflow: none;
+}
 
 li {
   padding: 0 1.25rem;
