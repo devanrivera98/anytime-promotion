@@ -19,6 +19,18 @@
   height: 100%;
 } */
 
+.drawer-closed {
+  width: 100%;
+  overflow: hidden;
+  height: 0px;
+  transition: 250ms height ease-in-out;
+}
+
+.drawer-open {
+  height: 100vh;
+  transition: 250ms height ease-in-out;
+}
+
 header {
   overflow: none;
 }
