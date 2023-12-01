@@ -12,14 +12,17 @@ export default function ContactForm() {
           </div>
         </div>
         <div className="md:w-1/3 pt-5">
-          <div className="bg-gray-400 mx-3">
+          <div className="mx-3">
             <form className="flex flex-col">
-              <input className="mx-5 my-3 rounded rounded-md" placeholder="Full Name" required />
-              <hr className="bg-black rounded rounded-xl py-1"/>
-              <input className="mx-5 my-3  rounded rounded-md" placeholder="Email" required />
-              <input className="mx-5 my-3  rounded rounded-md" placeholder="Subject" required />
-              <input className="mx-5 my-3 rounded rounded-md" placeholder="Message" required />
-              <button className="w-20 bg-darkRed">Submit</button>
+              <input type='text' className="bg-offWhite my-3 " placeholder="Full Name" required />
+              <hr className="bg-black rounded rounded-xl py-0.5"/>
+              <input type='text' className="bg-offWhite my-3" placeholder="Email" required />
+             <hr className="bg-black rounded rounded-xl py-0.5"/>
+              <input type='text' className="bg-offWhite my-3" placeholder="Subject" required />
+             <hr className="bg-black rounded rounded-xl py-0.5"/>
+              <textarea rows={6} className="bg-offWhite my-3" placeholder="Message" required />
+             <hr className="bg-black rounded rounded-xl py-0.5"/>
+              <button type="submit" className="w-28 p-2 bg-darkRed text-white hover:bg-red-900  rounded rounded-lg mt-5">Submit</button>
             </form>
           </div>
         </div>
