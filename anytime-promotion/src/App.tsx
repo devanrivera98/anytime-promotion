@@ -4,6 +4,7 @@ import Homepage from './Homepage'
 import Validator from './Validator'
 import Events from './Events'
 import './App.css'
+import ContactForm from './ContactForm'
 
 function App() {
 
@@ -16,6 +17,7 @@ function App() {
             <Route index element={<Homepage/>} />
             <Route path='/events' element={<Events />} />
             <Route path='/validator' element={<Validator/>} />
+            <Route path='/contact' element={<ContactForm />} />
           </Route>
         </Routes>
       </div>
