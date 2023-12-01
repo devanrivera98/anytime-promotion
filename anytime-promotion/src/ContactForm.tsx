@@ -16,7 +16,7 @@ export default function ContactForm() {
         </div>
         <div className="md:w-1/3 py-5">
           <div className="mx-3">
-            <form name="contact" method="post" className="flex flex-col">
+            <form name="react-contact-form" method="post" className="flex flex-col">
               <input type='hidden' name='form-name' value='contact' />
               <input type='text' name="name" className="bg-offWhite my-3 md:my-5 py-2" placeholder="Full Name" required />
               <hr className="bg-black rounded rounded-xl py-0.5"/>
