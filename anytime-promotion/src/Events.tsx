@@ -1,10 +1,18 @@
 import EventsCard from "./EventsCard"
+import GuestCard from "./GuestCard"
+
 
 export default function Events() {
 
   return (
     <>
       <div className="bg-offWhite">
+        <div className="flex justify-center text-2xl pt-5">
+          <h1>Upcoming Guest!</h1>
+        </div>
+        <div>
+          <GuestCard />
+        </div>
         <div className="flex justify-center text-2xl pt-5">
           <h1>Upcoming Event!</h1>
         </div>
