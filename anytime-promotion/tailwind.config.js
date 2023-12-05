@@ -14,7 +14,7 @@ export default {
         '2xl': '1536px',
       },
       colors: {
-        lightGray: '#F5F5F5',
+        darkGray: '#F6F6F6',
         darkRed: '#610000',
         offWhite: '#F5F5F5',
         darkBlue: '#243551'
