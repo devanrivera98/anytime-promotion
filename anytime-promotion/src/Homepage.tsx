@@ -1,5 +1,6 @@
-import Slider from './Slider';
+// import Slider from './Slider';
 import Marquee from "react-fast-marquee";
+import Slider from "./Slider";
 
 export default function Homepage() {
   return (
@@ -12,6 +13,9 @@ export default function Homepage() {
         </div>
       </Marquee>
       <Slider />
+      {/* <div className='banner-height relative w-5/6 flex mx-auto'>
+        <img className='w-full h-full object-fill' src='slider.png' />
+      </div> */}
     </>
   );
 }

@@ -30,7 +30,7 @@ export default function Slider() {
       <div className="flex justify-center items-center">
         <LeftArrow onCustomClick={() => setIsCurrent((isCurrent - 1 + sliderPhotos.length) % sliderPhotos.length)}/>
         <div>
-          <img className="h-64 rounded rounded-xl banner" src={sliderPhotos[isCurrent].url} alt={sliderPhotos[isCurrent].name} />
+          <img className="h-64 rounded rounded-xl banner select-none hover:cursor-pointer" src={sliderPhotos[isCurrent].url} alt={sliderPhotos[isCurrent].name} />
         </div>
         <RightArrow onCustomClick={() => setIsCurrent((isCurrent + 1 + sliderPhotos.length) % sliderPhotos.length)} />
       </div>

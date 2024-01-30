@@ -8,8 +8,12 @@
 
 .banner {
   width: 65rem;
-  object-fit:fill;
-  user-select: none;
+  /* object-fit:fill;
+  user-select: none; */
+}
+
+.banner-height {
+  height: 300px;
 }
 
 /* .mobile-open {
