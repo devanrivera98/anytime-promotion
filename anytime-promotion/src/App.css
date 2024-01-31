@@ -86,6 +86,15 @@ li {
   font-size: 3rem;
 }
 
+.event-card {
+  max-width: 620px;
+}
+
+.events-image-container {
+  width: 250px;
+  height: 250px;
+}
+
 @media all and (max-width: 767px) {
   /* .container {
     flex-direction: column;

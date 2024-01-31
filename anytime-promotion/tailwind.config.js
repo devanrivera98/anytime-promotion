@@ -15,6 +15,7 @@ export default {
       },
       colors: {
         darkGray: '#F6F6F6',
+        darkerGray: '#333333',
         darkRed: '#610000',
         offWhite: '#F5F5F5',
         darkBlue: '#243551'
