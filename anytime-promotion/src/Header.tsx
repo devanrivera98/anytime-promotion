@@ -32,7 +32,7 @@ return (
     <nav className='bg-black text-white text-lg py-4'>
       <div className='flex flex-wrap items-center justify-between mx-auto p-4'>
         <a href='/' className='pl-3 hover:cursor-pointer'>
-          <div className='md:block hover:animate-pulse hidden'>Anytime Promotion</div>
+          <div className='md:block hover:animate-pulse hidden'>Anytime Promotions</div>
           <img className='w-12 h-15 md:hidden' src='/anytime-white-logo.jpg'></img>
         </a>
         <a href='#' id='menu-icon' className={isOpen ? 'close' : ''} onClick={handleIconClick}>
@@ -49,7 +49,7 @@ return (
               <a href='/events' className='block py-2 px-3 text-white rounded md:hover:bg-transparent hover:bg-gray-800 md:p-0 md:bg-black md:hover:underline underline-offset-4'>Events</a>
             </li>
             <li>
-              <a href='/validator' className='block py-2 px-3 text-white rounded md:hover:bg-transparent hover:bg-gray-800 md:p-0 md:bg-black md:hover:underline underline-offset-4'>Autograph Validator</a>
+              <a href='/validator' className='block py-2 px-3 text-white rounded md:hover:bg-transparent hover:bg-gray-800 md:p-0 md:bg-black md:hover:underline underline-offset-4'>COA Registry</a>
             </li>
             <li>
               <a href='/contact' className='block py-2 px-3 text-white rounded md:hover:bg-transparent hover:bg-gray-800 md:p-0 md:bg-black md:hover:underline underline-offset-4'>Contact Us</a>

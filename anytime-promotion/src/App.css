@@ -8,8 +8,12 @@
 
 .banner {
   width: 65rem;
-  object-fit:fill;
-  user-select: none;
+  /* object-fit:fill;
+  user-select: none; */
+}
+
+.banner-height {
+  height: 300px;
 }
 
 /* .mobile-open {
@@ -80,6 +84,15 @@ li {
 
 .icon-arrow {
   font-size: 3rem;
+}
+
+.event-card {
+  max-width: 620px;
+}
+
+.events-image-container {
+  width: 250px;
+  height: 250px;
 }
 
 @media all and (max-width: 767px) {

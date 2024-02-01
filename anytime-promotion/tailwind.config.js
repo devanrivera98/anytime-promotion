@@ -14,10 +14,11 @@ export default {
         '2xl': '1536px',
       },
       colors: {
-        lightGray: '#F5F5F5',
+        darkGray: '#F6F6F6',
+        darkerGray: '#333333',
         darkRed: '#610000',
         offWhite: '#F5F5F5',
-        darkBlue: '#243551'
+        darkBlue: '#2C3E50'
       },
     },
   },
