@@ -3,7 +3,7 @@ import CaspioIntegration from "./CaspioIntegration";
 export default function Validator() {
   return (
     <>
-    <div className="bg-offWhite h-screen">
+    <div className="bg-offWhite min-h-screen">
       <div className="flex justify-center pt-5">
         <h1 className="text-2xl md:text-4xl p-1 my-5">Authentication</h1>
       </div>
