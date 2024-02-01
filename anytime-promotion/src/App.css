@@ -95,6 +95,25 @@ li {
   height: 250px;
 }
 
+.footer-container {
+  height: 300px;
+}
+
+.footer-text-container {
+  width: 33%;
+}
+
+.footer-image-container {
+  /* width: 175px; */
+  width: 33%;
+  height: 100%;
+}
+
+.footer-icon-container {
+  /* width: 50px; */
+  width: 33%;
+}
+
 @media all and (max-width: 767px) {
   /* .container {
     flex-direction: column;
@@ -147,5 +166,12 @@ li {
       -webkit-transform: translateY(-6px) rotate(-45deg);
       -ms-transform: translateY(-6px) rotate(-45deg);
       transform: translateY(-6px) rotate(-45deg);
+    }
+}
+
+
+@media screen and (min-width:640px) {
+  .footer-container {
+      height: 200px;
     }
 }

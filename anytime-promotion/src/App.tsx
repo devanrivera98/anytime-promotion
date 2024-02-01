@@ -5,6 +5,7 @@ import Validator from './Validator'
 import Events from './Events'
 import './App.css'
 import ContactForm from './ContactForm'
+import Footer from './Footer'
 
 function App() {
 
@@ -20,6 +21,7 @@ function App() {
             <Route path='/contact' element={<ContactForm />} />
           </Route>
         </Routes>
+        <Footer></Footer>
       </div>
     </>
   )
