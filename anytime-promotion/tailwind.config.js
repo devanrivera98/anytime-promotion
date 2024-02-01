@@ -18,7 +18,7 @@ export default {
         darkerGray: '#333333',
         darkRed: '#610000',
         offWhite: '#F5F5F5',
-        darkBlue: '#243551'
+        darkBlue: '#2C3E50'
       },
     },
   },

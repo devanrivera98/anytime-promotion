@@ -8,7 +8,7 @@ export default function Homepage() {
       <Marquee className='bg-darkRed mb-4 py-4 z-10' pauseOnHover={true}>
         <div>
           <h1 className='md:text-2xl text-white'>
-            &nbsp;Signed with artists such as Joe Rubinstein, Larry Houston, Chuck Patton, Jim Krueger, Javier Hernandez, Don Walker, and many more!
+            &nbsp;&nbsp;&nbsp;&nbsp;Just Announced: Whittier Comic Fest - June 8, 2024! Stay tuned and follow us on social media for the latest updates!
           </h1>
         </div>
       </Marquee>
