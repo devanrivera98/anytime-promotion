@@ -5,6 +5,7 @@ import Slider from "./Slider";
 export default function Homepage() {
   return (
     <>
+    <div className="min-h-screen">
       <Marquee className='bg-darkRed mb-4 py-4 z-10' pauseOnHover={true}>
         <div>
           <h1 className='md:text-2xl text-white'>
@@ -16,6 +17,7 @@ export default function Homepage() {
       {/* <div className='banner-height relative w-5/6 flex mx-auto'>
         <img className='w-full h-full object-fill' src='slider.png' />
       </div> */}
+    </div>
     </>
   );
 }
