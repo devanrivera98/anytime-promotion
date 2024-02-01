@@ -96,7 +96,7 @@ li {
 }
 
 .footer-container {
-  height: 200px;
+  height: 300px;
 }
 
 .footer-text-container {
@@ -166,5 +166,12 @@ li {
       -webkit-transform: translateY(-6px) rotate(-45deg);
       -ms-transform: translateY(-6px) rotate(-45deg);
       transform: translateY(-6px) rotate(-45deg);
+    }
+}
+
+
+@media screen and (min-width:640px) {
+  .footer-container {
+      height: 200px;
     }
 }

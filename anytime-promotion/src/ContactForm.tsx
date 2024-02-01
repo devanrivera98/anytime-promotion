@@ -3,7 +3,7 @@ export default function ContactForm() {
 
   return (
     <>
-    <div className="bg-offWhite h-screen ">
+    <div className="bg-offWhite min-h-screen ">
       <div className="flex flex-col md:flex-row md:justify-evenly">
         <div className="md:w-2/3 md:pl-10 pt-10">
           <div>
