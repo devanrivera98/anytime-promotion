@@ -16,7 +16,7 @@ export default function Slider() {
       function timerCallback() {
     setIsCurrent((isCurrent + 1 + sliderPhotos.length) % sliderPhotos.length)
   }
-  const intervalID = setInterval(timerCallback, 3000)
+  const intervalID = setInterval(timerCallback, 4000)
 
   //cleaning the interval
   return () => clearInterval(intervalID)
@@ -29,8 +29,10 @@ export default function Slider() {
     <div className="pt-5">
       <div className="flex justify-center items-center">
         <LeftArrow onCustomClick={() => setIsCurrent((isCurrent - 1 + sliderPhotos.length) % sliderPhotos.length)}/>
-        <div>
-          <img className="h-64 rounded rounded-xl banner select-none hover:cursor-pointer" src={sliderPhotos[isCurrent].url} alt={sliderPhotos[isCurrent].name} />
+        <div className='md:w-3/5 h-56'>
+          <a target='_blank' href={sliderPhotos[isCurrent].link}>
+          <img className="object-fill w-full h-full sm:rounded sm:rounded-xl banner select-none hover:cursor-pointer" src={sliderPhotos[isCurrent].url} alt={sliderPhotos[isCurrent].name} />
+          </a>
         </div>
         <RightArrow onCustomClick={() => setIsCurrent((isCurrent + 1 + sliderPhotos.length) % sliderPhotos.length)} />
       </div>
