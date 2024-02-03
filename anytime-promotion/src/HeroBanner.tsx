@@ -11,10 +11,10 @@ return (
       </div>
       <div className="flex">
         <div className="mx-2">
-        <a className="text-xl text-white border rounded rounded-xl p-2 border-white">Learn More</a>
+        <a className="text-xl cursor-pointer text-white border rounded rounded-xl p-2 border-white" href="/events">Learn More</a>
         </div>
         <div className="mx-2">
-          <a className="text-xl cursor-pointer text-white border border-black rounded rounded-xl p-2 hero-icon">
+          <a className="text-xl cursor-pointer text-white border border-black rounded rounded-xl p-2 hero-icon" href="https://www.instagram.com/anytimepromotions/" target='_blank'>
             Instagram
           </a>
         </div>
