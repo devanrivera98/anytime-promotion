@@ -1,4 +1,4 @@
-import GuestCard from "./GuestCard"
+import GuestCard from "./components/GuestCard"
 
 export default function GuestPage() {
 

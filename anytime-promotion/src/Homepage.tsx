@@ -1,25 +1,25 @@
+import HeroBanner from "./HeroBanner"
+
 export default function Homepage() {
+
   return (
     <>
-    <div className="homepage-hero flex flex-col justify-center items-center px-5">
-      <div className="">
-        <h1 className="text-white text-center text-6xl"> Because timing is everything</h1>
-      </div>
-      <div className="py-5">
-        <h4 className="text-white text-center text-xl">Take a look at our upcoming events and stay up to date with us on Instagram</h4>
-      </div>
-      <div className="flex">
-        <div className="mx-2">
-        <a className="text-xl text-white border rounded rounded-xl p-2 border-white">Learn More</a>
+    <div>
+      <HeroBanner/>
+      <div className=" bg-offWhite py-10 sm:flex mx-auto justify-evenly">
+        <div className="my-auto mx-3 sm:mx-0">
+          <img className="max-h-80 p-3 border border-black" src="eric-photo-one.jpg" />
         </div>
-        <div className="mx-2">
-          <a className="text-xl text-white border border-black rounded rounded-xl p-2 hero-icon">
-            Instagram
-          </a>
+        <div className="sm:w-1/2 my-5 sm:my-0 px-5 sm:px-0 text-center sm:text-left">
+          <h1 className="text-5xl mb-2">Hi, I'm Eric</h1>
+          <p>
+          I am the enthusiastic founder of Anytime Promotions, deeply rooted in my love for comics and collectibles. Since embarking on this journey in 2022, I've had the privilege of organizing events with respected comic book figures like David Mack, Norm Rapmund and Guy Gilchrist, aiming to enrich the cultural fabric of my hometown, Whittier, CA.
+          <br/> <br/>
+          I am currently involved in promoting for legendary comic book inker Joe Rubinstein. In this role, I take on various marketing tasks and am always eager to connect with new clients who are interested in strengthening their promotional efforts.
+          <br/> <br/>
+          One of my most exciting projects is the development of Whittier's first-ever "Comic-Con" through the Whittier Comic Fest. This event is envisioned as a celebration of comics, collectibles, and community, marking a new chapter in our local cultural scene. My dedication to comics extends beyond personal interest; it's about fostering a vibrant community and creating lasting memories.
+          </p>
         </div>
-      </div>
-      <div>
-        <p></p>
       </div>
     </div>
     </>
