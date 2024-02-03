@@ -119,6 +119,16 @@ li {
   width: 33%;
 }
 
+.homepage-hero {
+  background-image: url('/uptown-whittier.png');
+  height: 500px;
+}
+
+.hero-icon {
+  background:linear-gradient(90deg,#f9ce34,
+    #ee2a7b,#6228d7)
+}
+
 @media all and (max-width: 767px) {
   /* .container {
     flex-direction: column;

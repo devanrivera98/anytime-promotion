@@ -14,7 +14,7 @@ export default function Events() {
             <h1 className="text-2xl">Whittier Comic Fest 2024</h1>
           </div>
           <div className="flex justify-center flex-col items-center">
-            <EventsCard guest='Whittier Comic Fest' color="bg-darkerGray" instagram='https://www.instagram.com/p/CzUmHzHPSvl/' image="/whittier-comic-fest-banner.png" date="June 8,2024" text="After the success of the first Whittier Comic Fest in 2023, we are proud to announce the next Whittier Comic Fest for June 2024. Stay tuned for additional information regarding our guest lineup, venue details, and event timings. We look forward to sharing more exciting details in the near future! Your attendence will make the event truly special, and we hope to see you there!"/>
+            <EventsCard guest='Whittier Comic Fest' color="bg-darkerGray" instagram='https://www.instagram.com/p/CzUmHzHPSvl/' image="/dark-red-whittier.png" date="June 8,2024" text="After the success of the first Whittier Comic Fest in 2023, we are proud to announce the next Whittier Comic Fest for June 2024. Stay tuned for additional information regarding our guest lineup, venue details, and event timings. We look forward to sharing more exciting details in the near future! Your attendence will make the event truly special, and we hope to see you there!"/>
           </div>
           <div className="flex justify-center text-4xl py-6">
             <h1>Past Event!</h1>

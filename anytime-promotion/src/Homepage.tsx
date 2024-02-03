@@ -1,20 +1,27 @@
-// import Slider from './Slider';
-import Marquee from "react-fast-marquee";
-import Slider from "./Slider";
-
 export default function Homepage() {
   return (
     <>
-    <div className="min-h-screen">
-      <Marquee className='bg-darkRed py-4 z-10' pauseOnHover={true}>
-        <div>
-          <h1 className='md:text-2xl text-white'>
-            &nbsp;&nbsp;&nbsp;&nbsp;Just Announced: Whittier Comic Fest - June 8, 2024! Stay tuned and follow us on social media for the latest updates!
-          </h1>
+    <div className="homepage-hero flex flex-col justify-center items-center px-5">
+      <div className="">
+        <h1 className="text-white text-center text-6xl"> Because timing is everything</h1>
+      </div>
+      <div className="py-5">
+        <h4 className="text-white text-center text-xl">Take a look at our upcoming events and stay up to date with us on Instagram</h4>
+      </div>
+      <div className="flex">
+        <div className="mx-2">
+        <a className="text-xl text-white border rounded rounded-xl p-2 border-white">Learn More</a>
         </div>
-      </Marquee>
-      <Slider />
+        <div className="mx-2">
+          <a className="text-xl text-white border border-black rounded rounded-xl p-2 hero-icon">
+            Instagram
+          </a>
+        </div>
+      </div>
+      <div>
+        <p></p>
+      </div>
     </div>
     </>
-  );
+  )
 }
