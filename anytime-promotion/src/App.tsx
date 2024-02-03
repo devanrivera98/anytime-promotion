@@ -12,7 +12,7 @@ function App() {
 
   return (
     <>
-      <div>
+      <div className='relative'>
         <Routes>
           <Route path='/' element={<Header />}>
             <Route index element={<Homepage/>} />

@@ -48,8 +48,16 @@ li {
 }
 
 .header {
-  z-index: 1;
+  z-index: -1;
+    margin: 0;
+      top: 0;
+      left: 0;
 }
+
+header {
+    transform: translate3d(0, 0, 0);
+}
+
 
 /* .nav-toggle {
   position: absolute;
