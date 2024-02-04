@@ -52,11 +52,11 @@ header {
 }
 
 .eric-background {
-  background-image:url('white-background.png') ;
+  background-image:url('/white-background.png') ;
 }
 
 .about-background {
-  background-image: url('blue-background.png');
+  background-image: url('/blue-background.png');
 }
 
 .open {
