@@ -58,6 +58,20 @@ header {
     transform: translate3d(0, 0, 0);
 }
 
+.eric-title {
+  border-bottom: solid 20px rgb(197, 197, 197);
+  display: inline-block;
+  line-height: .1rem;
+}
+
+.eric-background {
+  background-image:url('white-background.png') ;
+}
+
+.about-background {
+  background-image: url('blue-background.png');
+}
+
 
 /* .nav-toggle {
   position: absolute;
