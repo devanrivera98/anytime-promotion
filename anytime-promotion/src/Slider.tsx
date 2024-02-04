@@ -18,7 +18,6 @@ export default function Slider() {
   }
   const intervalID = setInterval(timerCallback, 4000)
 
-  //cleaning the interval
   return () => clearInterval(intervalID)
 
 

@@ -5,7 +5,6 @@ import { faBars } from '@fortawesome/free-solid-svg-icons';
 import {faXmark} from '@fortawesome/free-solid-svg-icons';
 
 export default function Header() {
-  // const [isOpen, setIsOpen] = useState(false)
   const [isMobile, setIsMobile] = useState(window.innerWidth < 768)
   const [windowWidth, setWindowWidth] = useState(window.innerWidth);
   const [isOpen, setIsOpen] = useState(false)

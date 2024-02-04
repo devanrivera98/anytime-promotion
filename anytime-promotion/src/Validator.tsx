@@ -13,7 +13,7 @@ export default function Validator() {
         </div>
         <div className="px-5 py-3" >
           <p>Verify the authenticity of your Anytime Promotion signed item by using our Autograph Verification. The serial number included in your COA will provide you with: </p>
-            {/* <br /> &bull;  Issue Signed <br /> &bull;  Who signed <br /> &bull; Date of signing <br />  Check provided by Caspio. <br /> Enter your item's serial number below: </p> */}
+
           <div className="leading-9">
             <div>
               &bull;  Issue Signed
