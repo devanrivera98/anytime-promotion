@@ -1,7 +1,6 @@
 import {Outlet} from 'react-router-dom'
 import { useEffect, useState } from 'react'
 import Banner from './Banner';
-// import { faToggleOff } from '@fortawesome/free-solid-svg-icons';
 
 export default function Header() {
   const [isOpen, setIsOpen] = useState(false)
