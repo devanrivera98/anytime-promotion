@@ -45,6 +45,9 @@ return (
               <a href='/' className='block py-2 px-3 text-white rounded md:hover:bg-transparent hover:bg-gray-800 md:p-0 md:bg-black md:hover:underline underline-offset-4'>Home</a>
             </li>
             <li >
+              <a href='/whittier-comic-fest' className='block py-2 px-3 text-gold rounded md:hover:bg-transparent hover:bg-gray-800 md:p-0 md:bg-black md:hover:underline underline-offset-4'>Whittier Comic Fest</a>
+            </li>
+            <li >
               <a href='/events' className='block py-2 px-3 text-white rounded md:hover:bg-transparent hover:bg-gray-800 md:p-0 md:bg-black md:hover:underline underline-offset-4'>Events</a>
             </li>
             <li>
