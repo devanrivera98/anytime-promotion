@@ -15,6 +15,7 @@ export default {
       },
       colors: {
         darkGray: '#F6F6F6',
+        lightGray: '#F5F5F5',
         darkerGray: '#333333',
         matteBlack: '#131314',
         gold: '#FFBC59',
