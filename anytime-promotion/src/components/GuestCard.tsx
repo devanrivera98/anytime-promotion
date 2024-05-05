@@ -6,7 +6,7 @@ export default function GuestCard({image}: GuestCardProp) {
 
   return (
     <>
-    <li style={{ width: 'calc(33.33% - 8px)' }} className="bg-lightGray py-5">
+    <li className="bg-lightGray py-5 guestWidth">
       <div>
         <img className="w-full h-full" src={image} />
       </div>
