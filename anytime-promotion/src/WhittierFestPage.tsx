@@ -1,5 +1,5 @@
 import GuestCard from "./components/GuestCard"
-import LocationSection from "./components/GoogleMaps"
+import LocationSection from "./components/LocationSection"
 
 export default function WhittierFestPage() {
 
