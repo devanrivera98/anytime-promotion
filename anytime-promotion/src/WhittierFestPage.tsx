@@ -1,4 +1,5 @@
 import GuestCard from "./components/GuestCard"
+import LocationSection from "./components/GoogleMaps"
 
 export default function WhittierFestPage() {
 
@@ -8,7 +9,7 @@ export default function WhittierFestPage() {
       <div style={{height: '500px'}} className="">
         <img className="h-full w-full" src="whittier-center.png" />
       </div>
-      <div className="px-5">
+      <section className="px-5">
         <div className="flex justify-center py-5">
           <h1 className="text-5xl">Special Guest</h1>
         </div>
@@ -20,7 +21,13 @@ export default function WhittierFestPage() {
           <GuestCard image="david-mack.png" />
           <GuestCard image="david-mack.png" />
         </ul>
-      </div>
+      </section>
+      <section>
+        <div className="flex justify-center py-5">
+          <h1 className="text-5xl">Location</h1>
+        </div>
+        <LocationSection />
+      </section>
     </div>
     </>
   )

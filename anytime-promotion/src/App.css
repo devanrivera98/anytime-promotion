@@ -1,5 +1,5 @@
 :root {
-  --guestGap: 8px;
+  --guestGap: 10px;
 }
 
 * {
@@ -185,6 +185,12 @@ header {
 }
 
 @media screen and (min-width:750px) {
+  .guestWidth {
+    width: calc(50% - var(--guestGap) * 1/2);
+  }
+}
+
+@media screen and (min-width:992px) {
   .guestWidth {
     width: calc(33.33% - var(--guestGap) * 2/3);
   }

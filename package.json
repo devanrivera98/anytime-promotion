@@ -1,9 +1,12 @@
 {
   "devDependencies": {
+    "@types/google.maps": "^3.55.8",
     "markuplint": "^3.14.0"
   },
   "dependencies": {
     "@fortawesome/fontawesome-svg-core": "^6.4.2",
+    "@googlemaps/js-api-loader": "^1.16.6",
+    "@react-google-maps/api": "^2.19.3",
     "@types/react-fontawesome": "^1.6.8",
     "markup": "^0.0.4",
     "react-icons": "^4.11.0",
