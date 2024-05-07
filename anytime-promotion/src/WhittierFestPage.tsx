@@ -7,7 +7,7 @@ export default function WhittierFestPage() {
     <>
     <div className="min-h-screen">
       <div style={{height: '500px'}} className="">
-        <img className="h-full w-full" src="whittier-center.png" />
+        <img className="h-full w-full" src="whittier-header.png" />
       </div>
       <section className="px-5">
         <div className="flex justify-center py-5">
