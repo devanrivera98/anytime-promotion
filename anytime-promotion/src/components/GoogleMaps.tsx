@@ -40,11 +40,6 @@ useEffect(() => {
     lng: -118.03467559814453
   }
 
-  // const containerStyle = {
-  //   width: '40vw',
-  //   height: '400px'
-  // };
-
   const {isLoaded} = useJsApiLoader({
     id: 'google-map-script',
     googleMapsApiKey: GOOGLE_MAPS_KEY

@@ -1,4 +1,3 @@
-// import GuestCard from "./components/GuestCard"
 import AllGuest from "./components/AllGuest"
 import LocationSection from "./components/LocationSection"
 
