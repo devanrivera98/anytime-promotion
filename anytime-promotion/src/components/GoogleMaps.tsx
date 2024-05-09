@@ -1,4 +1,4 @@
-import { GoogleMap, useJsApiLoader } from "@react-google-maps/api";
+import { GoogleMap, useJsApiLoader, Marker } from "@react-google-maps/api";
 import { useEffect, useState } from "react";
 
 const GOOGLE_MAPS_KEY = import.meta.env.VITE_GOOGLE_MAPS_KEY;
@@ -55,7 +55,9 @@ useEffect(() => {
     <>
     <div className="md:w-1/2">
       {isLoaded && (
-      <GoogleMap mapContainerStyle={containerStyle} center={coordinates}  zoom={18}/>
+      <GoogleMap mapContainerStyle={containerStyle} center={coordinates}  zoom={18}>
+        <Marker position={coordinates} />
+      </GoogleMap>
       )}
     </div>
     </>

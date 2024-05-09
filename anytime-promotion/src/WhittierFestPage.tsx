@@ -9,7 +9,8 @@ export default function WhittierFestPage() {
     <div className="min-h-screen">
       <div style={{height: '500px'}}>
         <picture>
-          <source srcSet="whittier-header-mobile.png" media="(max-width: 767px)" />
+          <source srcSet="whittier-header-mobile.png" media="(max-width: 640px)" />
+          <source srcSet="whittier-header-mini.png" media="(max-width: 767px)" />
           <source srcSet="whittier-header.png" media="(max-width: 1200px)" />
           <img className="h-full w-full" src="whittier-header.png" />
         </picture>
