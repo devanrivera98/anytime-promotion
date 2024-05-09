@@ -1,5 +1,3 @@
-import GuestCard from "./components/GuestCard"
-
 export default function GuestPage() {
 
   return (
@@ -8,7 +6,6 @@ export default function GuestPage() {
           <h1>Upcoming Guest!</h1>
         </div>
         <div>
-          <GuestCard />
         </div>
     </>
   )
