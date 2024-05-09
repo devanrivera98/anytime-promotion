@@ -41,19 +41,19 @@ return (
         </a>
         <div className={`w-full md:h-auto md:block md:w-auto md:p-2 md:p-0 ${isOpen ? 'drawer-open' : 'drawer-closed'}`}>
           <ul className='flex flex-col justify-evenly h-5/6 items-center mt-4 p-4 md:p-0 border border-gray-400 rounded-lg md:flex-row md:mt-0 md:border-0 md:bg-black drawer overflow-y-hidden  '>
-            <li>
+            <li className='px-1 lg:px-5'>
               <a href='/' className='block py-2 px-3 text-white rounded md:hover:bg-transparent hover:bg-gray-800 md:p-0 md:bg-black md:hover:underline underline-offset-4'>Home</a>
             </li>
-            <li >
+            <li className='px-1 lg:px-5'>
               <a href='/whittier-comic-fest' className='block py-2 px-3 text-gold rounded md:hover:bg-transparent hover:bg-gray-800 md:p-0 md:bg-black md:hover:underline underline-offset-4'>Whittier Comic Fest</a>
             </li>
-            <li >
+            <li className='px-1 lg:px-5'>
               <a href='/events' className='block py-2 px-3 text-white rounded md:hover:bg-transparent hover:bg-gray-800 md:p-0 md:bg-black md:hover:underline underline-offset-4'>Events</a>
             </li>
-            <li>
+            <li className='px-1 lg:px-5'>
               <a href='/validator' className='block py-2 px-3 text-white rounded md:hover:bg-transparent hover:bg-gray-800 md:p-0 md:bg-black md:hover:underline underline-offset-4'>COA Registry</a>
             </li>
-            <li>
+            <li className='px-1 lg:px-5'>
               <a href='/contact' className='block py-2 px-3 text-white rounded md:hover:bg-transparent hover:bg-gray-800 md:p-0 md:bg-black md:hover:underline underline-offset-4'>Contact Us</a>
           </li>
           </ul>
