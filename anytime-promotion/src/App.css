@@ -1,3 +1,7 @@
+:root {
+  --guestGap: 10px;
+}
+
 * {
   padding: 0;
   margin: 0;
@@ -117,6 +121,14 @@ header {
     #ee2a7b,#6228d7)
 }
 
+.guestGap {
+  column-gap:var(--guestGap);
+}
+
+.guestWidth {
+  width: 100%;
+}
+
 @media all and (max-width: 767px) {
 
   a#menu-icon {
@@ -170,4 +182,16 @@ header {
   .footer-container {
       height: 200px;
     }
+}
+
+@media screen and (min-width:750px) {
+  .guestWidth {
+    width: calc(50% - var(--guestGap) * 1/2);
+  }
+}
+
+@media screen and (min-width:992px) {
+  .guestWidth {
+    width: calc(33.33% - var(--guestGap) * 2/3);
+  }
 }

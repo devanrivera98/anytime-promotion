@@ -1,11 +1,18 @@
-export default function GuestCard() {
+interface GuestCardProps {
+  image: string;
+  name: string;
+  number: number;
+}
+
+export default function GuestCard({image, name, number}: GuestCardProps) {
+
   return (
     <>
-    <div className="flex justify-center py-2">
-      <div className="bg-gray-300 p-5">
-        <img className="w-72 h-80" src="anytime-promotion-test.jpeg" />
+    <li className="bg-lightGray py-10 guestWidth">
+      <div>
+        <img className="w-full h-full" src={image} alt={name} key={number} />
       </div>
-    </div>
+    </li>
     </>
   )
 }

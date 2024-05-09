@@ -15,8 +15,10 @@ export default {
       },
       colors: {
         darkGray: '#F6F6F6',
+        lightGray: '#F5F5F5',
         darkerGray: '#333333',
         matteBlack: '#131314',
+        gold: '#FFBC59',
         cream: '#DFDBC7',
         darkRed: '#610000',
         offWhite: '#F5F5F5',
