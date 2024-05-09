@@ -3,7 +3,7 @@ import GoogleMaps from "./GoogleMaps"
 export default function LocationSection() {
   return (
     <>
-    <section className="md:flex px-5">
+    <section className="md:flex px-5 pb-5">
       <GoogleMaps />
       <div className="md:w-1/2 py-5 md:py-0">
         <h1 className="text-center text-2xl">Whittier Community Center</h1>

@@ -1,4 +1,5 @@
-import GuestCard from "./components/GuestCard"
+// import GuestCard from "./components/GuestCard"
+import AllGuest from "./components/AllGuest"
 import LocationSection from "./components/LocationSection"
 
 export default function WhittierFestPage() {
@@ -18,12 +19,7 @@ export default function WhittierFestPage() {
           <h1 className="text-5xl">Special Guest</h1>
         </div>
         <ul className="flex flex-wrap guestGap gap-y-5">
-          <GuestCard image="david-mack.png" />
-          <GuestCard image="david-mack.png" />
-          <GuestCard image="david-mack.png" />
-          <GuestCard image="david-mack.png" />
-          <GuestCard image="david-mack.png" />
-          <GuestCard image="david-mack.png" />
+          <AllGuest />
         </ul>
       </section>
       <section>
