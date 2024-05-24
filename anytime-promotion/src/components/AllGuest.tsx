@@ -2,9 +2,14 @@ import GuestCard from "./GuestCard";
 
 const guestList = [
   {
+  name: 'David Mack',
+  photo: 'whittier-guest/david-mack.png',
+  number: 1
+  },
+  {
     name: 'Larry Houston',
     photo: 'whittier-guest/larry-houston.png',
-    number: 1
+    number: 2
   },
   {
     name: 'Joe Rubinstein',
