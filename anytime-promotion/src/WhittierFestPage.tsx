@@ -9,8 +9,8 @@ export default function WhittierFestPage() {
       <div>
 
       </div>
-      <div className='md:flex'>
-        <div className="bg-gradient-to-r from-gray-900 via-gray-800 via-blue-900 to-blue-900 w-full md:w-3/5 h-96 md:h-auto">
+      <div className='flex flex-col md:flex-row'>
+        <div className="order-2 md:order-1 bg-gradient-to-r from-gray-900 via-gray-800 via-blue-900 to-blue-900 w-full md:w-3/5 h-96 md:h-auto">
           <div className="flex flex-col justify-center  text-center h-full">
             <div className="px-2">
             <span className="text-white block text-5xl py-2">Thank you for your support.</span>
@@ -18,7 +18,7 @@ export default function WhittierFestPage() {
             </div>
           </div>
         </div>
-        <div className="md:w-2/5 h-96">
+        <div className="md:w-2/5 h-96 order-1 md:order-2">
           <img className="h-full w-full" src="whittier-bg.png" />
         </div>
         {/* <div style={{height: '500px'}}>
